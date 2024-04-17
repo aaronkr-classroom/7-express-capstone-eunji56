@@ -5,8 +5,18 @@
  * Listing 12.5 (p. 178)
  * 홈 컨트롤러로의 라우팅
  */
-
-
+exports.getHome = (req, res) => {
+    res.render('index');
+}
+exports.getcourses = (req, res) => {
+    res.render('courses');
+}
+exports.getcontact = (req, res) => {
+    res.render('contact');
+}
+exports.getthanks = (req, res) => {
+    res.render('thanks');
+}
 /**
  * Listing 12.9 (p. 182)
  * 콘텐츠의 설정과 렌더링된 뷰에 전달
